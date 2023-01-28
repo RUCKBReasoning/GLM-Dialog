@@ -14,6 +14,14 @@ This repository extends on the `SwissArmyTransformer` module, modifications are 
 
 We also provide the cache of web searches during our experiements. A detailed documentation about implementing a Search Engine could be found in [here](doc/replacingSearchEngine.md).
 
+We release the code for our evaluation framework at [DialEvaluation](https://github.com/RUCKBReasoning/DialEvaluation), it can be simply deployed as
+
+```bash
+git clone https://github.com/RUCKBReasoning/DialEvaluation
+bash setup.sh
+bash run.sh
+```
+
 ## Performances
 
 Our model achieves promising performances as shown below: 
@@ -83,6 +91,12 @@ Our model achieves promising performances as shown below:
 | DialGLM10B | **78.705**    | **93.135**    | <u>3.508</u> | <u>17.478</u> | 14.306        | <u>81.460</u> | <u>31.837</u> | <u>0.607</u> |
 
 ## Other Metrics
+
+## Cite our Paper
+
+```bash
+TO BE RELEASED
+```
 
 
 
