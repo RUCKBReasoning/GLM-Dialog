@@ -1,8 +1,8 @@
-# DialGLM
+# GLM-dialog
 
-This repository stores the codes and references for the paper `DialGLM xxx`
+This repository stores the codes and references for the paper `GLM-dialog xxx`
 
-DialGLM is a xxx.
+GLM-dialog is a xxx.
 
 ## Model Checkpoints
 
