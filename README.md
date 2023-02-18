@@ -42,8 +42,8 @@ cd GLM-dialog
 ### Docker Image
 We prepare a docker image based on CUDA 11.2 [docker/cuda112.dockerfile](docker/cuda112.dockerfile).
 ```shell
-docker build -f cuda112.dockerfile . -t dailglm-cuda102
-docker run --gpus all --rm -it --ipc=host dailglm-cuda102
+docker build -f cuda112.dockerfile . -t dailglm-cuda112
+docker run --gpus all --rm -it --ipc=host dailglm-cuda112
 ```
 
 ### Manual Installation
