@@ -1,25 +1,67 @@
 # GLM-Dialog
 
-This repository stores the codes and references for the paper `GLM-Dialog xxx`
+This repo contains the original implementation of the paper "[GLM-Dialog: Noise-tolerant Pre-training for Knowledge-grounded Dialogue Generation]()"
 
-GLM-Dialog is a xxx.
+<p align="center">
+  <img src="img/framework.png" width="80%" height="80%">
+</p>
 
-## Model Checkpoints
+Our paper is still under review. If you find our repository useful, you may consider this.
+```
+@article{ GLM-Dialog,
+    title={ GLM-Dialog: Noise-tolerant Pre-training for Knowledge-grounded Dialogue Generation },
+    author={ Jing Zhang, Xiaokang Zhang, Daniel Zhang-Li, Jifan Yu, Zijun Yao, Zeyao Ma, Yiqi Xu, Haohua Wang, Xiaohan Zhang, Nianyi Lin, Sunrui Lu, Juanzi Li, Jie Tang },
+    year={ 2023 }
+}
+```
 
-The trained checkpoint for our final model can be downloaded [here](todo)
+**We're putting together a fun little demo that you can easily download and deploy on your own machine. So stay tuned!**
+### Updates
 
-## Code
+* **02/18/2023**: The code for inference is released. Stay tuned for the code for training.
 
-This repository extends on the `SwissArmyTransformer` module, modifications are required to practice our model, we provide the edited version in `./SwissArmyTransformer`
+## Content
 
-We also provide the cache of web searches during our experiements. A detailed documentation about implementing a Search Engine could be found in [here](doc/replacingSearchEngine.md).
+1. [Requirements](#requirements)
+2. [ModelCheckpoints](#model-checkpoints)
+3. [Inference](#inference)
+4. [Performances](#performances)
+5. [Related-Tools](#related-tools)
+6. [License](#license)
+7. [Contact](#contact)
 
-We release the code for our evaluation framework at [DialEvaluation](https://github.com/RUCKBReasoning/DialEvaluation), it can be simply deployed as
+## Requirements
+We provide two ways to configure the environment: dockerfile configuration or manual configuration.
+Clone the repo first.
 
+```shell
+git clone https://github.com/RUCKBReasoning/GLM-dialog
+cd GLM-dialog
+```
+
+### Docker Image
+We prepare a docker image based on CUDA 11.2 [docker/cuda112.dockerfile](docker/cuda112.dockerfile).
+```shell
+docker build -f cuda112.dockerfile . -t dailglm-cuda102
+docker run --gpus all --rm -it --ipc=host dailglm-cuda102
+```
+
+### Manual Installation
+Please first install PyTorch (we use 1.9.0) and [apex](https://github.com/NVIDIA/apex), and then install other
+dependencies by `pip install -r requirements.txt`
+
+We currently do not support multi-GPU inference. Loading the 10B model in FP16 mode requires at least 19GB of GPU memory, so please make sure you have a GPU with 24GB of memory or more, such as the RTX 3090.
+
+## Model-Checkpoints
+
+The trained checkpoint for our final model can be downloaded [here](https://drive.google.com/drive/folders/1kEmxwFme4qUzIuUOW7kRbBGZ5e_bSipu?usp=sharing)
 ```bash
-git clone https://github.com/RUCKBReasoning/DialEvaluation
-bash setup.sh
-bash run.sh
+mv glm-dialog.zip model_ckpt && cd model_ckpt && unzip glm-dialog.zip
+```
+
+## Inference
+```bash
+bash inference/scripts/deploy.sh
 ```
 
 ## Performances
@@ -90,15 +132,23 @@ Our model achieves promising performances as shown below:
 | GLM130B    | <u>73.604</u> | 87.685        | **4.177**    | **18.905**    | **16.047**    | 79.562        | 28.897        | **0.615**    |
 | DialGLM10B | **78.705**    | **93.135**    | <u>3.508</u> | <u>17.478</u> | 14.306        | <u>81.460</u> | <u>31.837</u> | <u>0.607</u> |
 
-## Other Metrics
+## Related-Tools
 
-## Cite our Paper
+We also release the code for our evaluation framework at [DialEvaluation](https://github.com/RUCKBReasoning/DialEvaluation), it can be simply deployed as
 
 ```bash
-TO BE RELEASED
+git clone https://github.com/RUCKBReasoning/DialEvaluation
+bash setup.sh
+bash run.sh
 ```
 
 
+## License
+NPM is CC-BY-NC 4.0 licensed.
+
+## Contact
+
+Please leave Github issues or contact Xiaokang Zhang `zhang2718@ruc.edu.cn` for any questions.
 
 
 
