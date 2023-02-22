@@ -61,7 +61,7 @@ mv glm-dialog.zip model_ckpt && cd model_ckpt && unzip glm-dialog.zip
 
 ## Inference
 ```bash
-bash inference/scripts/deploy.sh
+cd infer && python deploy.py
 ```
 
 ## Performances
