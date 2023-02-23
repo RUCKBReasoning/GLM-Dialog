@@ -12,10 +12,11 @@ GLM-Dialog is a large-scale language model (LLM) with 10B parameters capable of 
 3. [Inference](#inference)
 4. [Training](#training)
 5. [Related-Tools](#related-tools)
-6. [Evaluation](#evaluation)
-7. [Citation](#citation)
-8. [License](#license)
-9. [Contact](#contact)
+6. [WeChat-Account](#wechat-account)
+7. [Evaluation](#evaluation)
+8. [Citation](#citation)
+9. [License](#license)
+10. [Contact](#contact)
 
 ### Requirements
 We provide two ways to configure the environment: dockerfile configuration or manual configuration.
@@ -64,6 +65,8 @@ cd
 ```bash
 cd 
 ```
+### WeChat-Account
+We deploy GLM-Dialog as a WeChat official account named ``AI小呆爱聊天/小知呆`` to enable both one-one and group conversations with it and other bots.(https://aigc.aminer.cn/xdai/chat?xdid=%23xd%E5%B0%8F%E7%9F%A5%E5%91%86001)
 
 ### Evaluation
 
@@ -114,9 +117,9 @@ Our model achieves promising performance by the traditional human-evaluation met
 
 **Evaluation platform:**
 
-We also provide a simple human evaluation strategy that enables a human to centrally converse with several dialogue models at once and implicitly compare these bots during the conversation process. 
+We also provide an implicit human evaluation strategy that enables a human to centrally converse with several dialogue models at once and implicitly compare these bots during the conversation process. 
 You can access the evaluation platform [here](https://aigc.aminer.cn/racetrack), which currently includes [CDial-GPT](https://github.com/thu-coai/CDial-GPT), [EVA2.0](https://github.com/thu-coai/EVA), and [Plato2](https://arxiv.org/abs/2006.16779), [GLM10B, GLM130B](https://github.com/THUDM/GLM-130B), and GLM-Dialog for evaluation.
-We release the code for our evaluation framework at [DialEvaluation](https://github.com/RUCKBReasoning/DialEvaluation).
+We release the codes for the automatic evaluation, traditional human evaluation, and the proposed implicit human evaluation at [DialEvaluation](https://github.com/RUCKBReasoning/DialEvaluation).
 
 ### Citation
 If you find our work useful, please consider citing GLM-Dialog:
