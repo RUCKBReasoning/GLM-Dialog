@@ -1,6 +1,6 @@
 # GLM-Dialog:Noise-tolerant Pre-training for Knowledge-grounded Dialogue Generation
 
-GLM-Dialog is a large-scale language model (LLM) with 10B parameters capable of knowledge-grounded conversation in Chinese using a search engine to access the Internet knowledge. It is obtained by fine-tuning GLM10B(https://github.com/THUDM/GLM-130B), an open-source, pre-trained Chinese LLM with 10B parameter. GLM-Dialog offers 
+GLM-Dialog is a large-scale language model (LLM) with 10B parameters capable of knowledge-grounded conversation in Chinese using a search engine to access the Internet knowledge. It is obtained by fine-tuning [GLM10B](https://github.com/THUDM/GLM-130B), an open-source, pre-trained Chinese LLM with 10B parameter. GLM-Dialog offers 
 1. a series of applicable techniques for exploiting various external knowledge including both helpful and noisy knowledge, enabling the creation of robust knowledge-grounded dialogue LLMs with limited proper datasets;
 2. a novel evaluation platform for comparing the dialogue models in real-world applications;
 3. a large-scale, open-source dialogue model for building downstream dialogue service;
@@ -19,7 +19,7 @@ For understanding 1, please refer to our paper:
 
 ## Evaluation platform:
 
-we provide a simple human evaluation strategy that enables a human to centrally converse with several dialogue models at once and implicitly compare these bots during the conversation process. You can access the evaluation platform here (https://aigc.aminer.cn/racetrack), which currently includes CDial-GPT(https://github.com/thu-coai/CDial-GPT), EVA2.0(https://github.com/thu-coai/EVA), and Plato2(https://arxiv.org/abs/2006.16779), GLM10B, GLM130B(https://github.com/THUDM/GLM-130B), and GLM-Dialog for evaluation.
+we provide a simple human evaluation strategy that enables a human to centrally converse with several dialogue models at once and implicitly compare these bots during the conversation process. You can access the evaluation platform [here] (https://aigc.aminer.cn/racetrack), which currently includes [CDial-GPT](https://github.com/thu-coai/CDial-GPT), [EVA2.0](https://github.com/thu-coai/EVA), and [Plato2](https://arxiv.org/abs/2006.16779), [GLM10B, GLM130B](https://github.com/THUDM/GLM-130B), and GLM-Dialog for evaluation.
 We release the code for our evaluation framework at [DialEvaluation](https://github.com/RUCKBReasoning/DialEvaluation).
 
 
