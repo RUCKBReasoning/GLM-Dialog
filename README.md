@@ -50,6 +50,22 @@ mv glm-dialog.zip model_ckpt && cd model_ckpt && unzip glm-dialog.zip
 ```bash
 cd infer && python deploy.py
 ```
+### Training
+
+
+### Related-Tools
+
+### [HOSMEL](https://github.com/THUDM/HOSMEL)
+### Query generation
+```bash
+cd 
+```
+### Noise Classification
+```bash
+cd 
+```
+
+
 
 ### Performances
 
