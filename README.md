@@ -6,8 +6,6 @@ GLM-Dialog is a large-scale language model (LLM) with 10B parameters capable of 
 3. a large-scale, open-source dialogue model for building downstream dialogue service;
 4. an easy-to-use toolkit that consists of tools such as short text entity linking, query generation, helpful knowledge classification, as well as an online service on WeChat platform for supporting convenient usage and experience. 
 
-* **02/18/2023**: The code for inference is released. Stay tuned for the code for training.
-
 ## Content
 1. [Requirements](#requirements)
 2. [ModelCheckpoints](#model-checkpoints)
