@@ -19,7 +19,8 @@ For understanding 1, please refer to our paper:
 
 ## Evaluation platform:
 
-we provide a simple human evaluation strategy that enables a human to centrally converse with several dialogue models at once and implicitly compare these bots during the conversation process. You can access the evaluation platform [here] (https://aigc.aminer.cn/racetrack), which currently includes [CDial-GPT](https://github.com/thu-coai/CDial-GPT), [EVA2.0](https://github.com/thu-coai/EVA), and [Plato2](https://arxiv.org/abs/2006.16779), [GLM10B, GLM130B](https://github.com/THUDM/GLM-130B), and GLM-Dialog for evaluation.
+we provide a simple human evaluation strategy that enables a human to centrally converse with several dialogue models at once and implicitly compare these bots during the conversation process. 
+You can access the evaluation platform [here](https://aigc.aminer.cn/racetrack), which currently includes [CDial-GPT](https://github.com/thu-coai/CDial-GPT), [EVA2.0](https://github.com/thu-coai/EVA), and [Plato2](https://arxiv.org/abs/2006.16779), [GLM10B, GLM130B](https://github.com/THUDM/GLM-130B), and GLM-Dialog for evaluation.
 We release the code for our evaluation framework at [DialEvaluation](https://github.com/RUCKBReasoning/DialEvaluation).
 
 
