@@ -26,14 +26,14 @@ git clone https://github.com/RUCKBReasoning/GLM-dialog
 cd GLM-dialog
 ```
 
-* Docker Image
+**Docker Image**
 We prepare a docker image based on CUDA 11.2 [docker/cuda112.dockerfile](docker/cuda112.dockerfile).
 ```shell
 docker build -f cuda112.dockerfile . -t dailglm-cuda112
 docker run --gpus all --rm -it --ipc=host dailglm-cuda112
 ```
 
-* Manual Installation
+**Manual Installation**
 Please first install PyTorch (we use 1.9.0) and [apex](https://github.com/NVIDIA/apex), and then install other
 dependencies by `pip install -r requirements.txt`
 
@@ -54,13 +54,13 @@ cd infer && python deploy.py
 
 
 ### Related-Tools
-* [HOSMEL](https://github.com/THUDM/HOSMEL) is a hot swappable modulized entity linking toolkit for Chinese.
+**[HOSMEL](https://github.com/THUDM/HOSMEL) is a hot swappable modulized entity linking toolkit for Chinese**
 
-* Query generation
+**Query generation**
 ```bash
 cd 
 ```
-* Noise Classification
+**Noise Classification**
 ```bash
 cd 
 ```
@@ -69,7 +69,7 @@ cd
 
 Our model achieves promising performances by the traditional human-evaluation methods. 
 
-* Human-evaluation on 50 chit-chat self-chat dialogues
+**Human-evaluation on 50 chit-chat self-chat dialogues**
 
 | Model      | Coherence    | Informativeness | Safety       | Inspiration  | Hallucination | Engagingness | Faithfulness |
 | ---------- | ------------ | --------------- | ------------ | ------------ | ------------- | ------------ | ------------ |
@@ -79,7 +79,7 @@ Our model achieves promising performances by the traditional human-evaluation me
 | GLM10B     | 1.371        | 1.296           | <u>1.539</u> | 0.932        | 0.130         | 1.187        | 1.160        |
 | DialGLM10B | **1.515**    | **1.517**       | **1.656**    | **1.171**    | 0.098         | **1.383**    | **1.383**    |
 
-* Human-evaluation on 100 knowledge-grounded self-chat dialogues
+**Human-evaluation on 100 knowledge-grounded self-chat dialogues**
 
 | Model      | Coherence    | Informativeness | Safety       | Inspiration  | Hallucination | Engagingness | Faithfulness |
 | ---------- | ------------ | --------------- | ------------ | ------------ | ------------- | ------------ | ------------ |
