@@ -6,31 +6,9 @@ GLM-Dialog is a large-scale language model (LLM) with 10B parameters capable of 
 3. a large-scale, open-source dialogue model for building downstream dialogue service;
 4. an easy-to-use toolkit that consists of tools such as short text entity linking, query generation, helpful knowledge classification, as well as an online service on WeChat platform for supporting convenient usage and experience. 
 
-
-## Techniques:
-Please refer to our paper:
-```
-@article{ GLM-Dialog,
-    title={ GLM-Dialog: Noise-tolerant Pre-training for Knowledge-grounded Dialogue Generation },
-    author={ Jing Zhang, Xiaokang Zhang, Daniel Zhang-Li, Jifan Yu, Zijun Yao, Zeyao Ma, Yiqi Xu, Haohua Wang, Xiaohan Zhang, Nianyi Lin, Sunrui Lu, Juanzi Li, Jie Tang },
-    year={ 2023 }
-}
-```
-
-## Evaluation platform:
-
-we provide a simple human evaluation strategy that enables a human to centrally converse with several dialogue models at once and implicitly compare these bots during the conversation process. 
-You can access the evaluation platform [here](https://aigc.aminer.cn/racetrack), which currently includes [CDial-GPT](https://github.com/thu-coai/CDial-GPT), [EVA2.0](https://github.com/thu-coai/EVA), and [Plato2](https://arxiv.org/abs/2006.16779), [GLM10B, GLM130B](https://github.com/THUDM/GLM-130B), and GLM-Dialog for evaluation.
-We release the code for our evaluation framework at [DialEvaluation](https://github.com/RUCKBReasoning/DialEvaluation).
-
-
-**We're putting together a fun little demo that you can easily download and deploy on your own machine. So stay tuned!**
-### Updates
-
 * **02/18/2023**: The code for inference is released. Stay tuned for the code for training.
 
 ### Content
-
 1. [Requirements](#requirements)
 2. [ModelCheckpoints](#model-checkpoints)
 3. [Inference](#inference)
@@ -120,7 +98,21 @@ Our model achieves promising performances by the traditional human-evaluation me
 | DialGLM10B | **1.668**    | **1.624**       | **1.688**    | **1.393**    | <u>0.134</u>  | **1.412**    | **1.368**    |
 
 
+## Evaluation platform:
 
+We also provide a simple human evaluation strategy that enables a human to centrally converse with several dialogue models at once and implicitly compare these bots during the conversation process. 
+You can access the evaluation platform [here](https://aigc.aminer.cn/racetrack), which currently includes [CDial-GPT](https://github.com/thu-coai/CDial-GPT), [EVA2.0](https://github.com/thu-coai/EVA), and [Plato2](https://arxiv.org/abs/2006.16779), [GLM10B, GLM130B](https://github.com/THUDM/GLM-130B), and GLM-Dialog for evaluation.
+We release the code for our evaluation framework at [DialEvaluation](https://github.com/RUCKBReasoning/DialEvaluation).
+
+## Citation:
+If you find our work useful, please consider citing GLM-Dialog:
+```
+@article{ GLM-Dialog,
+    title={ GLM-Dialog: Noise-tolerant Pre-training for Knowledge-grounded Dialogue Generation },
+    author={ Jing Zhang, Xiaokang Zhang, Daniel Zhang-Li, Jifan Yu, Zijun Yao, Zeyao Ma, Yiqi Xu, Haohua Wang, Xiaohan Zhang, Nianyi Lin, Sunrui Lu, Juanzi Li, Jie Tang },
+    year={ 2023 }
+}
+```
 
 ### License
 NPM is CC-BY-NC 4.0 licensed.
