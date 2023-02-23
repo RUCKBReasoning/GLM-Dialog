@@ -7,7 +7,20 @@ GLM-Dialog is a large-scale language model (LLM) with 10B parameters capable of 
 4. an easy-to-use toolkit that consists of tools such as short text entity linking, query generation, helpful knowledge classification, as well as an online service on WeChat platform for supporting convenient usage and experience. 
 
 
-For 
+## Techniques:
+For understanding 1, please refer to our paper:
+```
+@article{ GLM-Dialog,
+    title={ GLM-Dialog: Noise-tolerant Pre-training for Knowledge-grounded Dialogue Generation },
+    author={ Jing Zhang, Xiaokang Zhang, Daniel Zhang-Li, Jifan Yu, Zijun Yao, Zeyao Ma, Yiqi Xu, Haohua Wang, Xiaohan Zhang, Nianyi Lin, Sunrui Lu, Juanzi Li, Jie Tang },
+    year={ 2023 }
+}
+```
+
+## Evaluation platform:
+
+we provide a simple human evaluation strategy that enables a human to centrally converse with several dialogue models at once and implicitly compare these bots during the conversation process. You can access the evaluation platform here (https://aigc.aminer.cn/racetrack), which currently includes CDial-GPT(https://github.com/thu-coai/CDial-GPT), EVA2.0(https://github.com/thu-coai/EVA), and Plato2(https://arxiv.org/abs/2006.16779), GLM10B, GLM130B(https://github.com/THUDM/GLM-130B), and GLM-Dialog for evaluation.
+We release the code for our evaluation framework at [DialEvaluation](https://github.com/RUCKBReasoning/DialEvaluation).
 
 
 **We're putting together a fun little demo that you can easily download and deploy on your own machine. So stay tuned!**
@@ -127,15 +140,7 @@ Our model achieves promising performances as shown below:
 | GLM130B    | <u>73.604</u> | 87.685        | **4.177**    | **18.905**    | **16.047**    | 79.562        | 28.897        | **0.615**    |
 | DialGLM10B | **78.705**    | **93.135**    | <u>3.508</u> | <u>17.478</u> | 14.306        | <u>81.460</u> | <u>31.837</u> | <u>0.607</u> |
 
-## Related-Tools
 
-We also release the code for our evaluation framework at [DialEvaluation](https://github.com/RUCKBReasoning/DialEvaluation), it can be simply deployed as
-
-```bash
-git clone https://github.com/RUCKBReasoning/DialEvaluation
-bash setup.sh
-bash run.sh
-```
 
 
 
