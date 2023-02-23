@@ -66,7 +66,7 @@ cd
 cd 
 ```
 ### WeChat-Account
-We deploy GLM-Dialog as a WeChat official account named ``AI小呆爱聊天/小知呆`` to enable both one-one and group conversations with it and other bots.(https://aigc.aminer.cn/xdai/chat?xdid=%23xd%E5%B0%8F%E7%9F%A5%E5%91%86001)
+We deploy GLM-Dialog as a WeChat official account named [``AI小呆爱聊天/小知呆``](https://aigc.aminer.cn/xdai/chat?xdid=%23xd%E5%B0%8F%E7%9F%A5%E5%91%86001) to enable both one-one and group conversations with it and other bots.
 
 ### Evaluation
 
