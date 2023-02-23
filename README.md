@@ -5,7 +5,10 @@ GLM-Dialog is a large-scale language model (LLM) with 10B parameters capable of 
 2. a novel evaluation platform for comparing the dialogue models in real-world applications;
 3. a large-scale, open-source dialogue model for building downstream dialogue service;
 4. an easy-to-use toolkit that consists of tools such as short text entity linking, query generation, helpful knowledge classification, as well as an online service on WeChat platform for supporting convenient usage and experience. 
-```
+
+
+For 
+
 
 **We're putting together a fun little demo that you can easily download and deploy on your own machine. So stay tuned!**
 ### Updates
@@ -134,13 +137,6 @@ bash setup.sh
 bash run.sh
 ```
 
-Our paper is still under review. If you find our repository useful, you may consider citing this.
-```
-@article{ GLM-Dialog,
-    title={ GLM-Dialog: Noise-tolerant Pre-training for Knowledge-grounded Dialogue Generation },
-    author={ Jing Zhang, Xiaokang Zhang, Daniel Zhang-Li, Jifan Yu, Zijun Yao, Zeyao Ma, Yiqi Xu, Haohua Wang, Xiaohan Zhang, Nianyi Lin, Sunrui Lu, Juanzi Li, Jie Tang },
-    year={ 2023 }
-}
 
 
 ## License
