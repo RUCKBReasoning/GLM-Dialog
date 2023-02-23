@@ -54,13 +54,15 @@ cd infer && python deploy.py
 
 
 ### Related-Tools
-**[HOSMEL](https://github.com/THUDM/HOSMEL) is a hot swappable modulized entity linking toolkit for Chinese**
+**[HOSMEL](https://github.com/THUDM/HOSMEL) is a hot swappable modulized entity linking toolkit for short text in Chinese**
 
-**Query generation**
+short text entity linking, query generation, helpful knowledge classification
+
+**The query generation module takes dialogue history as input and generates an appropriate search query, which is passed to an online search engine for retrieving dialogue-relevant knowledge snippets**
 ```bash
 cd 
 ```
-**Noise Classification**
+**Helpful knowledge Classifier decides whether to use the external knowledge or not**
 ```bash
 cd 
 ```
