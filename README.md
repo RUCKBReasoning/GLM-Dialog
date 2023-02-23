@@ -1,18 +1,10 @@
-# GLM-Dialog
+# GLM-Dialog:Noise-tolerant Pre-training for Knowledge-grounded Dialogue Generation
 
-This repo contains the original implementation of the paper "[GLM-Dialog: Noise-tolerant Pre-training for Knowledge-grounded Dialogue Generation]()"
-
-<p align="center">
-  <img src="img/framework.png" width="80%" height="80%">
-</p>
-
-Our paper is still under review. If you find our repository useful, you may consider this.
-```
-@article{ GLM-Dialog,
-    title={ GLM-Dialog: Noise-tolerant Pre-training for Knowledge-grounded Dialogue Generation },
-    author={ Jing Zhang, Xiaokang Zhang, Daniel Zhang-Li, Jifan Yu, Zijun Yao, Zeyao Ma, Yiqi Xu, Haohua Wang, Xiaohan Zhang, Nianyi Lin, Sunrui Lu, Juanzi Li, Jie Tang },
-    year={ 2023 }
-}
+GLM-Dialog is a large-scale language model (LLM) with 10B parameters capable of knowledge-grounded conversation in Chinese using a search engine to access the Internet knowledge. It is obtained by fine-tuning GLM10B(https://github.com/THUDM/GLM-130B), an open-source, pre-trained Chinese LLM with 10B parameter. GLM-Dialog offers 
+(1) a series of applicable techniques for exploiting various external knowledge including both helpful and noisy knowledge, enabling the creation of robust knowledge-grounded dialogue LLMs with limited proper datasets. 
+(2) a novel evaluation platform for comparing the dialogue models in real-world applications. 
+(3) a large-scale, open-source dialogue model for building downstream dialogue service.
+(4) an easy-to-use toolkit that consists of tools such as short text entity linking, query generation, helpful knowledge classification, as well as an online service on WeChat platform for supporting convenient usage and experience. 
 ```
 
 **We're putting together a fun little demo that you can easily download and deploy on your own machine. So stay tuned!**
@@ -142,6 +134,14 @@ bash setup.sh
 bash run.sh
 ```
 
+Our paper is still under review. If you find our repository useful, you may consider citing this.
+```
+@article{ GLM-Dialog,
+    title={ GLM-Dialog: Noise-tolerant Pre-training for Knowledge-grounded Dialogue Generation },
+    author={ Jing Zhang, Xiaokang Zhang, Daniel Zhang-Li, Jifan Yu, Zijun Yao, Zeyao Ma, Yiqi Xu, Haohua Wang, Xiaohan Zhang, Nianyi Lin, Sunrui Lu, Juanzi Li, Jie Tang },
+    year={ 2023 }
+}
+
 
 ## License
 NPM is CC-BY-NC 4.0 licensed.
@@ -149,6 +149,7 @@ NPM is CC-BY-NC 4.0 licensed.
 ## Contact
 
 Please leave Github issues or contact Xiaokang Zhang `zhang2718@ruc.edu.cn` for any questions.
+
 
 
 
