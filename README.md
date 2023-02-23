@@ -12,7 +12,7 @@ GLM-Dialog is a large-scale language model (LLM) with 10B parameters capable of 
 3. [Inference](#inference)
 4. [Training](#training)
 5. [Related-Tools](#related-tools)
-6. [Evaluation](#performances)
+6. [Evaluation](#evaluation)
 7. [Citation](#citation)
 8. [License](#license)
 9. [Contact](#contact)
