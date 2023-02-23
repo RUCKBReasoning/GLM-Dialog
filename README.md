@@ -26,14 +26,14 @@ git clone https://github.com/RUCKBReasoning/GLM-dialog
 cd GLM-dialog
 ```
 
-**Docker Image**
+**Docker Image:**
 We prepare a docker image based on CUDA 11.2 [docker/cuda112.dockerfile](docker/cuda112.dockerfile).
 ```shell
 docker build -f cuda112.dockerfile . -t dailglm-cuda112
 docker run --gpus all --rm -it --ipc=host dailglm-cuda112
 ```
 
-**Manual Installation**
+**Manual Installation:**
 Please first install PyTorch (we use 1.9.0) and [apex](https://github.com/NVIDIA/apex), and then install other
 dependencies by `pip install -r requirements.txt`
 
@@ -69,9 +69,9 @@ cd
 
 ### Evaluation
 
-Our model achieves promising performances by the traditional human-evaluation methods. 
+Our model achieves promising performance by the traditional human-evaluation methods. 
 
-**Human-evaluation on 50 chit-chat self-chat dialogues**
+**Human-evaluation on 50 chit-chat self-chat dialogues:**
 
 | Model      | Coherence    | Informativeness | Safety       | Inspiration  | Hallucination | Engagingness | Faithfulness |
 | ---------- | ------------ | --------------- | ------------ | ------------ | ------------- | ------------ | ------------ |
@@ -81,7 +81,7 @@ Our model achieves promising performances by the traditional human-evaluation me
 | GLM10B     | 1.371        | 1.296           | <u>1.539</u> | 0.932        | 0.130         | 1.187        | 1.160        |
 | DialGLM10B | **1.515**    | **1.517**       | **1.656**    | **1.171**    | 0.098         | **1.383**    | **1.383**    |
 
-**Human-evaluation on 100 knowledge-grounded self-chat dialogues**
+**Human-evaluation on 100 knowledge-grounded self-chat dialogues:**
 
 | Model      | Coherence    | Informativeness | Safety       | Inspiration  | Hallucination | Engagingness | Faithfulness |
 | ---------- | ------------ | --------------- | ------------ | ------------ | ------------- | ------------ | ------------ |
@@ -91,7 +91,7 @@ Our model achieves promising performances by the traditional human-evaluation me
 | GLM10B     | 1.513        | 1.497           | 1.669        | <u>1.157</u> | 0.093         | <u>1.460</u> | 1.340        |
 | DialGLM10B | **1.759**    | **1.742**       | **1.816**    | **1.223**    | <u>0.046</u>  | **1.550**    | **1.473**    |
 
-**Human-evaluation on 50 chit-chat human-bot chat dialogue**
+**Human-evaluation on 50 chit-chat human-bot chat dialogue:**
 
 | Model      | Coherence    | Informativeness | Safety       | Inspiration  | Hallucination | Engagingness | Faithfulness |
 | ---------- | ------------ | --------------- | ------------ | ------------ | ------------- | ------------ | ------------ |
@@ -102,7 +102,7 @@ Our model achieves promising performances by the traditional human-evaluation me
 | GLM130B    | 1.232        | 1.179           | 1.378        | 1.000        | 0.257         | 0.816        | 0.784        |
 | DialGLM10B | 1.660        | **1.641**       | 1.688        | **1.376**    | 0.127         | **1.440**    | **1.460**    |
 
-**Human-evaluation on 100 knowledge-grounded human-bot chat dialogue**
+**Human-evaluation on 100 knowledge-grounded human-bot chat dialogue:**
 
 | Model      | Coherence    | Informativeness | Safety       | Inspiration  | Hallucination | Engagingness | Faithfulness |
 | ---------- | ------------ | --------------- | ------------ | ------------ | ------------- | ------------ | ------------ |
@@ -114,13 +114,13 @@ Our model achieves promising performances by the traditional human-evaluation me
 | DialGLM10B | **1.668**    | **1.624**       | **1.688**    | **1.393**    | <u>0.134</u>  | **1.412**    | **1.368**    |
 
 
-**Evaluation platform**
+**Evaluation platform:**
 
 We also provide a simple human evaluation strategy that enables a human to centrally converse with several dialogue models at once and implicitly compare these bots during the conversation process. 
 You can access the evaluation platform [here](https://aigc.aminer.cn/racetrack), which currently includes [CDial-GPT](https://github.com/thu-coai/CDial-GPT), [EVA2.0](https://github.com/thu-coai/EVA), and [Plato2](https://arxiv.org/abs/2006.16779), [GLM10B, GLM130B](https://github.com/THUDM/GLM-130B), and GLM-Dialog for evaluation.
 We release the code for our evaluation framework at [DialEvaluation](https://github.com/RUCKBReasoning/DialEvaluation).
 
-### Citation:
+### Citation
 If you find our work useful, please consider citing GLM-Dialog:
 ```
 @article{ GLM-Dialog,
