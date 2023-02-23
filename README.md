@@ -8,7 +8,7 @@ GLM-Dialog is a large-scale language model (LLM) with 10B parameters capable of 
 
 
 ## Techniques:
-For understanding 1, please refer to our paper:
+Please refer to our paper:
 ```
 @article{ GLM-Dialog,
     title={ GLM-Dialog: Noise-tolerant Pre-training for Knowledge-grounded Dialogue Generation },
@@ -29,7 +29,7 @@ We release the code for our evaluation framework at [DialEvaluation](https://git
 
 * **02/18/2023**: The code for inference is released. Stay tuned for the code for training.
 
-## Content
+### Content
 
 1. [Requirements](#requirements)
 2. [ModelCheckpoints](#model-checkpoints)
@@ -39,7 +39,7 @@ We release the code for our evaluation framework at [DialEvaluation](https://git
 6. [License](#license)
 7. [Contact](#contact)
 
-## Requirements
+### Requirements
 We provide two ways to configure the environment: dockerfile configuration or manual configuration.
 Clone the repo first.
 
@@ -48,32 +48,32 @@ git clone https://github.com/RUCKBReasoning/GLM-dialog
 cd GLM-dialog
 ```
 
-### Docker Image
+#### Docker Image
 We prepare a docker image based on CUDA 11.2 [docker/cuda112.dockerfile](docker/cuda112.dockerfile).
 ```shell
 docker build -f cuda112.dockerfile . -t dailglm-cuda112
 docker run --gpus all --rm -it --ipc=host dailglm-cuda112
 ```
 
-### Manual Installation
+#### Manual Installation
 Please first install PyTorch (we use 1.9.0) and [apex](https://github.com/NVIDIA/apex), and then install other
 dependencies by `pip install -r requirements.txt`
 
 We currently do not support multi-GPU inference. Loading the 10B model in FP16 mode requires at least 19GB of GPU memory, so please make sure you have a GPU with 24GB of memory or more, such as the RTX 3090.
 
-## Model-Checkpoints
+### Model-Checkpoints
 
 The trained checkpoint for our final model can be downloaded [here](https://drive.google.com/drive/folders/1kEmxwFme4qUzIuUOW7kRbBGZ5e_bSipu?usp=sharing)
 ```bash
 mv glm-dialog.zip model_ckpt && cd model_ckpt && unzip glm-dialog.zip
 ```
 
-## Inference
+### Inference
 ```bash
 cd infer && python deploy.py
 ```
 
-## Performances
+### Performances
 
 Our model achieves promising performances by the traditional human-evaluation methods. 
 
@@ -122,10 +122,10 @@ Our model achieves promising performances by the traditional human-evaluation me
 
 
 
-## License
+### License
 NPM is CC-BY-NC 4.0 licensed.
 
-## Contact
+### Contact
 
 Please leave Github issues or contact Xiaokang Zhang `zhang2718@ruc.edu.cn` for any questions.
 
