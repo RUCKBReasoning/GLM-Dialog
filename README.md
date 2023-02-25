@@ -1,4 +1,4 @@
-# GLM-Dialog:Noise-tolerant Pre-training for Knowledge-grounded Dialogue Generation
+## GLM-Dialog:Noise-tolerant Pre-training for Knowledge-grounded Dialogue Generation
 <p align="center">
   <img src="img/framework.png" width="90%" height="90%">
 </p>
@@ -8,7 +8,7 @@ GLM-Dialog is a large-scale language model (LLM) with 10B parameters capable of 
 3. a large-scale, open-source dialogue model for building downstream dialogue service;
 4. an easy-to-use toolkit that consists of tools such as short text entity linking, query generation, helpful knowledge classification, as well as an online service on WeChat platform for supporting convenient usage and experience. 
 
-## Content
+### Content
 1. [Requirements](#requirements)
 2. [ModelCheckpoints](#model-checkpoints)
 3. [Inference](#inference)
