@@ -1,6 +1,8 @@
 # GLM-Dialog:Noise-tolerant Pre-training for Knowledge-grounded Dialogue Generation
-
-GLM-Dialog is a large-scale language model (LLM) with 10B parameters capable of knowledge-grounded conversation in Chinese using a search engine to access the Internet knowledge. It is obtained by fine-tuning [GLM10B](https://github.com/THUDM/GLM-130B), an open-source, pre-trained Chinese LLM with 10B parameter. GLM-Dialog offers 
+<p align="center">
+  <img src="img/framework.png" width="90%" height="90%">
+</p>
+GLM-Dialog is a large-scale language model (LLM) with 10B parameters capable of knowledge-grounded conversation in Chinese using a search engine to access the Internet knowledge. It is obtained by fine-tuning [GLM10B](https://github.com/THUDM/GLM), an open-source, pre-trained Chinese LLM with 10B parameter. GLM-Dialog offers 
 1. a series of applicable techniques for exploiting various external knowledge including both helpful and noisy knowledge, enabling the creation of robust knowledge-grounded dialogue LLMs with limited proper datasets;
 2. a novel evaluation platform for comparing the dialogue models in real-world applications;
 3. a large-scale, open-source dialogue model for building downstream dialogue service;
@@ -52,7 +54,7 @@ mv glm-dialog.zip model_ckpt && cd model_ckpt && unzip glm-dialog.zip
 cd infer && python deploy.py
 ```
 ### Training
-
+See [train.md](train.md) for instructions.
 
 ### Related-Tools
 * **[HOSMEL](https://github.com/THUDM/HOSMEL) is a hot swappable modulized entity linking toolkit for short text in Chinese**
