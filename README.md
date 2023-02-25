@@ -2,11 +2,13 @@
 <p align="center">
   <img src="img/framework.png" width="90%" height="90%">
 </p>
-GLM-Dialog is a large-scale language model (LLM) with 10B parameters capable of knowledge-grounded conversation in Chinese using a search engine to access the Internet knowledge. It is obtained by fine-tuning [GLM10B](https://github.com/THUDM/GLM), an open-source, pre-trained Chinese LLM with 10B parameter. GLM-Dialog offers 
-1. a series of applicable techniques for exploiting various external knowledge including both helpful and noisy knowledge, enabling the creation of robust knowledge-grounded dialogue LLMs with limited proper datasets;
+
+GLM-Dialog is a large-scale language model (LLM) with 10B parameters capable of knowledge-grounded conversation in Chinese using a search engine to access the Internet knowledge. It is obtained by fine-tuning [GLM10B](https://github.com/THUDM/GLM), an open-source, pre-trained Chinese LLM with 10B parameter. 
+GLM-Dialog offers   
+1. a series of applicable techniques for exploiting various external knowledge including both helpful and noisy knowledge, enabling the creation of robust knowledge-grounded dialogue LLMs with limited proper datasets;   
 2. a novel evaluation platform for comparing the dialogue models in real-world applications;
-3. a large-scale, open-source dialogue model for building downstream dialogue service;
-4. an easy-to-use toolkit that consists of tools such as short text entity linking, query generation, helpful knowledge classification, as well as an online service on WeChat platform for supporting convenient usage and experience. 
+3. a large-scale, open-source dialogue model for building downstream dialogue service;    
+4. an easy-to-use toolkit that consists of tools such as short text entity linking, query generation, helpful knowledge classification, as well as an online service on WeChat platform for supporting convenient usage and experience.   
 
 ### Content
 1. [Requirements](#requirements)
