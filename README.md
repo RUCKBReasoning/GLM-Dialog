@@ -42,7 +42,7 @@ We currently do not support multi-GPU inference. Loading the 10B model in FP16 m
 
 ### Model-Checkpoints
 
-The trained checkpoint for our final model can be downloaded [here](https://drive.google.com/drive/folders/1kEmxwFme4qUzIuUOW7kRbBGZ5e_bSipu?usp=sharing)
+The trained checkpoint for our final model can be downloaded [google_drive](https://drive.google.com/drive/folders/1kEmxwFme4qUzIuUOW7kRbBGZ5e_bSipu?usp=sharing) or [pan](https://pan.baidu.com/s/1g5WZwkNJS0C8qWsrtdDAOw?pwd=4edx)
 ```bash
 mv glm-dialog.zip model_ckpt && cd model_ckpt && unzip glm-dialog.zip
 ```
