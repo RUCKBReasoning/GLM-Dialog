@@ -59,15 +59,15 @@ cd infer && python deploy.py
 See [train.md](train.md) for instructions.
 
 ### Related-Tools
-* **[HOSMEL](https://github.com/THUDM/HOSMEL) is a hot swappable modulized entity linking toolkit for short text in Chinese**
+* [HOSMEL](https://github.com/THUDM/HOSMEL) is a hot swappable modulized entity linking toolkit for short text in Chinese
 
-* **The query generation module takes dialogue history as input and generates an appropriate search query, which is passed to an online search engine for retrieving dialogue-relevant knowledge snippets**
+* The query generation module takes dialogue history as input and generates an appropriate search query, which is passed to an online search engine for retrieving dialogue-relevant knowledge snippets
 ```bash
-cd 
+cd tools && bash query_generation.sh
 ```
-* **Helpful knowledge Classifier decides whether to use the external knowledge or not**
+* Helpful knowledge Classifier decides whether to use the external knowledge or not**
 ```bash
-cd 
+cd tools && bash knowledge_classification.sh
 ```
 ### WeChat-Account
 We deploy GLM-Dialog as a WeChat official account named [``AI小呆爱聊天/小知呆``](https://aigc.aminer.cn/xdai/chat?xdid=%23xd%E5%B0%8F%E7%9F%A5%E5%91%86001) to enable both one-one and group conversations with it and other bots.
