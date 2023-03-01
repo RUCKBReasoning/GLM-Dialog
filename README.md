@@ -16,11 +16,10 @@ GLM-Dialog offers
 3. [Inference](#inference)
 4. [Training](#training)
 5. [Related-Tools](#related-tools)
-6. [WeChat-Account](#wechat-account)
-7. [Evaluation](#evaluation)
-8. [Citation](#citation)
-9. [License](#license)
-10. [Contact](#contact)
+6. [Evaluation](#evaluation)
+7. [Citation](#citation)
+8. [License](#license)
+9. [Contact](#contact)
 
 ### Requirements
 We provide two ways to configure the environment: dockerfile configuration or manual configuration.
