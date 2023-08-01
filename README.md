@@ -3,6 +3,18 @@
   <img src="img/framework.png" width="90%" height="90%">
 </p>
 
+This is the official implementation of the paper "GLM-Dialog:Noise-tolerant Pre-training for Knowledge-grounded Dialogue Generation" (KDD 2023 ADS).
+
+If this repository could help you, please cite the following paper:
+```
+@inproceedings{zhangkdd2023,
+  author = {Jing Zhang, Xiaokang Zhang, Daniel Zhang-Li, Jifan Yu, Zijun Yao, Zeyao Ma, Yiqi Xu, Haohua Wang, Xiaohan Zhang, Nianyi Lin, Sunrui Lu, Juanzi Li, Jie Tang},
+  title = "[GLM-Dialog:Noise-tolerant Pre-training for Knowledge-grounded Dialogue Generation](https://arxiv.org/pdf/2302.14401.pdf)",
+  booktitle = "KDD",
+  year = "2023"
+}
+```
+
 GLM-Dialog is a large-scale language model (LLM) with 10B parameters capable of knowledge-grounded conversation in Chinese using a search engine to access the Internet knowledge. It is obtained by fine-tuning [GLM10B](https://github.com/THUDM/GLM), an open-source, pre-trained Chinese LLM with 10B parameter. 
 GLM-Dialog offers   
 1. a series of applicable techniques for exploiting various external knowledge including both helpful and noisy knowledge, enabling the creation of robust knowledge-grounded dialogue LLMs with limited proper datasets;   
