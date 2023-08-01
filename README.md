@@ -3,13 +3,13 @@
   <img src="img/framework.png" width="90%" height="90%">
 </p>
 
-This is the official implementation of the paper "GLM-Dialog:Noise-tolerant Pre-training for Knowledge-grounded Dialogue Generation" (KDD 2023 ADS).
+This is the official implementation of the paper "GLM-Dialog:Noise-tolerant Pre-training for Knowledge-grounded Dialogue Generation[https://arxiv.org/pdf/2302.14401.pdf]" (KDD 2023 ADS).
 
 If this repository could help you, please cite the following paper:
 ```
 @inproceedings{zhangkdd2023,
   author = {Jing Zhang, Xiaokang Zhang, Daniel Zhang-Li, Jifan Yu, Zijun Yao, Zeyao Ma, Yiqi Xu, Haohua Wang, Xiaohan Zhang, Nianyi Lin, Sunrui Lu, Juanzi Li, Jie Tang},
-  title = "[GLM-Dialog:Noise-tolerant Pre-training for Knowledge-grounded Dialogue Generation](https://arxiv.org/pdf/2302.14401.pdf)",
+  title = "[GLM-Dialog:Noise-tolerant Pre-training for Knowledge-grounded Dialogue Generation]",
   booktitle = "KDD",
   year = "2023"
 }
