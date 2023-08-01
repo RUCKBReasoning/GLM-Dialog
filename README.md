@@ -9,7 +9,7 @@ If this repository could help you, please cite the following paper:
 ```
 @inproceedings{zhangkdd2023,
   author = {Jing Zhang, Xiaokang Zhang, Daniel Zhang-Li, Jifan Yu, Zijun Yao, Zeyao Ma, Yiqi Xu, Haohua Wang, Xiaohan Zhang, Nianyi Lin, Sunrui Lu, Juanzi Li, Jie Tang},
-  title = "[GLM-Dialog:Noise-tolerant Pre-training for Knowledge-grounded Dialogue Generation]",
+  title = "GLM-Dialog:Noise-tolerant Pre-training for Knowledge-grounded Dialogue Generation",
   booktitle = "KDD",
   year = "2023"
 }
